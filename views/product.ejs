@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title><%=content%></title>
+</head>
+<body>
+    <table >
+        <tr>
+            <th>编号</th>
+            <th>产品名称</th>
+            <th>单价</th>
+            <th>库存量</th>
+        </tr>
+       
+        <% for(var i=0;i<products.length;i++){ %>
+            <tr>
+                <td><%=products[i].id%></td>
+                <td><%=products[i].name%></td>
+                <td><%=products[i].price%></td>
+                <td><%=products[i].amount%></td>
+            </tr>
+        <% } %>
+        
+    </table>
+</body>
+</html>
